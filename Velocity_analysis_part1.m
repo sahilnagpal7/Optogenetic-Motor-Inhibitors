@@ -1,24 +1,16 @@
 % Velocity calculation code - Part 1 - Optogenetic control of kinesins -1, -2, -3 and dynein reveals their specific roles in vesicular transport
 
-%% NOTE: Save the "velocity_1", "Slid_time" manually from the Workspace! After using this code, proceed to "Velo_processing_intact.m" code to plot the velocity time series plot.
+%% NOTE: Save the "velocity_1", "Slid_time" manually from the Workspace! After using this code, proceed to "Velocity_analysis_part2.m" code to plot the velocity time series plot.
 
 clear; close all; clc;
 set(0,'DefaultFigureWindowStyle','docked');
 
-%% A) Sourcing the code file path:
-% set(0,'DefaultFigureWindowStyle','docked');
-% %addpath('C:\Users\HendricksLab\Desktop\GitHub (Karthik)\Karthik_Codes\Final codes\Imp_Off-on-off - With Multiple Trajectory analysis\') % Directory containing codes
-% addpath('C:\Users\karth\Dropbox\My PC (Karthikeyan-PC)\Desktop\Code and Sure internship project\Karthik_Codes\Karthik_Code')
-% addpath('C:\Users\karth\Dropbox\My PC (Karthikeyan-PC)\Desktop\Code and Sure internship project\Karthik_Codes\Karthik_Code\STAC\'); % Single trajectory
-% addpath('C:\Users\karth\Dropbox\My PC (Karthikeyan-PC)\Desktop\Code and Sure internship project\Karthik_Codes\Karthik_Code\MTAC\'); % Single cell - multitrajectory
-% addpath('C:\Users\karth\Dropbox\My PC (Karthikeyan-PC)\Desktop\Code and Sure internship project\Karthik_Codes\Karthik_Code\MCMTAC\'); % Multi cell - multitrajectory
 
-
-%% B) Variables (Change as per your conditions):
+%% Variables (Change as per your conditions):
 dT = 0.302; % Exposure time
 WindowSize = 15; % Should be adjusted
 
-%% C) Uploading data and initializing the variables and determining the number of trajectories
+%% Uploading data and initializing the variables and determining the number of trajectories
 cd('/Users/sahilnagpal/Desktop/Test/') % Location of the data
 File = 'Spots in tracks statistics_full cell' % Name of the .csv file generated from Trackmate (old version) - with x-coordinate of cell center in V1, and y-coordinate of cell center in W1
 State = readmatrix(File);
