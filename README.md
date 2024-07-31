@@ -3,6 +3,8 @@ Codes used for data analysis in Nagpal et al., 2024
 
 # Instructions for the velocity code:
 
+CSV file generated from ImageJ plugin - TrackMate (code compatible with CSV generated from the older version of TrackMate) is used in the first code. Manually add x and y coordinates of the cell center to V1 and W1 in the CSV file. 
+
 First code - "Velocity_analysis_part1.m":
 Things to do before running the script:
 Mention the directory of your CSV data - line 23
