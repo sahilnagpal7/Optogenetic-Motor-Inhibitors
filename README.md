@@ -1,6 +1,9 @@
 # Optogenetic-Motor-Inhibitors
 Codes used for data analysis in Nagpal et al., 2024
 
+# Instructions for Trajectory analysis code:
+This code takes xlm file generated from ImageJ plugin - TrackMate - Modify the file name with x and y cordinates of cell center (followed by 'x', 'y') and area of cell (followed by 'a'). Modify line 11 of the code with the path for the 'scripts' folder in Fiji on your computer. Modify the threshold for caculating Rg depending on the cargo.  
+
 # Instructions for the velocity code:
 
 CSV file generated from ImageJ plugin - TrackMate (code compatible with CSV generated from the older version of TrackMate) is used in the first code. Manually add x and y coordinates of the cell center to V1 and W1 in the CSV file. 
